@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ viewMode, config, theme }) => {
             href="https://wozku.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="pointer-events-auto text-[11px] font-medium text-neutral-400 dark:text-neutral-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors tracking-wide"
+            className="pointer-events-auto text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors tracking-wide"
           >
             An open-source project by <span className="font-bold">Wozku</span>
           </a>
