@@ -20,14 +20,6 @@ export const Footer: React.FC = () => {
           RESPONSIVE
         </div>
       </div>
-      <a
-        href="https://wozku.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="pointer-events-auto mt-4 text-[11px] font-medium text-neutral-400 dark:text-neutral-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors tracking-wide"
-      >
-        An open-source project by <span className="font-bold">Wozku</span>
-      </a>
     </footer>
   );
 };
