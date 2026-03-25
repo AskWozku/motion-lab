@@ -2,7 +2,6 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Zap } from 'lucide-react';
 import { cn } from '../../lib/utils';
-import { Logo } from '../Logo';
 import { BackgroundConfig } from '../../types';
 import { BackgroundRenderer } from '../BackgroundRenderer';
 import { ErrorBoundary } from '../ErrorBoundary';
@@ -54,11 +53,19 @@ export const Hero: React.FC<HeroProps> = ({ viewMode, config, theme }) => {
           animate={{ opacity: 1, y: 0 }}
           className="relative z-10 space-y-8 flex flex-col items-center"
         >
-          <div className="flex flex-col items-center gap-3 mb-4">
-            <Logo theme={theme} className="h-16 w-auto" />
-            <div className="text-center">
-              <p className="text-[10px] text-neutral-500 dark:text-neutral-400 font-semibold uppercase tracking-widest">Motion Lab</p>
+          <div className="flex flex-col items-center gap-2 mb-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center">
+                <Zap className="w-5 h-5 text-white" />
+              </div>
+              <span className={cn(
+                "font-black text-2xl tracking-tight",
+                "text-neutral-900 dark:text-white"
+              )}>
+                Motion Lab
+              </span>
             </div>
+            <p className="text-[10px] text-neutral-500 dark:text-neutral-400 font-semibold uppercase tracking-widest">Interactive Background Engines</p>
           </div>
 
           <h2 className={cn(

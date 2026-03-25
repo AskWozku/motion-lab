@@ -3,7 +3,7 @@ import { Zap, Layers, Maximize2 } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="p-8 flex justify-center pointer-events-none">
+    <footer className="p-8 flex flex-col items-center gap-4 pointer-events-none">
       <div className="glass px-8 py-4 rounded-3xl flex items-center gap-10">
         <div className="flex items-center gap-2.5 text-[10px] font-black uppercase tracking-[0.2em] text-neutral-600 dark:text-neutral-400">
           <Zap className="w-3.5 h-3.5 text-indigo-500" />
@@ -20,6 +20,14 @@ export const Footer: React.FC = () => {
           RESPONSIVE
         </div>
       </div>
+      <a
+        href="https://wozku.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="pointer-events-auto text-[10px] font-medium text-neutral-400 dark:text-neutral-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors tracking-wide"
+      >
+        Powered by Wozku
+      </a>
     </footer>
   );
 };
